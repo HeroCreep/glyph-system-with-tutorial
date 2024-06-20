@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://yf2qymlq8x40"]
+
+[ext_resource type="Script" path="res://Button.gd" id="1_aj2bl"]
+[ext_resource type="Texture2D" uid="uid://c1rey6jrxd55s" path="res://Zw4+7Y.png" id="2_ty7el"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(903, 225)
+script = ExtResource("1_aj2bl")
+
+[node name="Button1" type="Button" parent="."]
+visible = false
+offset_right = 8.0
+offset_bottom = 8.0
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+offset_top = 67.0
+offset_right = 18.0
+offset_bottom = 98.0
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button3" type="Button" parent="."]
+visible = false
+offset_left = 75.0
+offset_right = 93.0
+offset_bottom = 31.0
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button4" type="Button" parent="."]
+visible = false
+offset_left = 75.0
+offset_top = 67.0
+offset_right = 93.0
+offset_bottom = 98.0
+text = "4"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button5" type="Button" parent="."]
+visible = false
+offset_left = 40.0
+offset_top = 110.0
+offset_right = 58.0
+offset_bottom = 141.0
+text = "5"
+metadata/_edit_use_anchors_ = true
+
+[node name="Zw4+7y" type="Sprite2D" parent="."]
+position = Vector2(-685.78, -51)
+scale = Vector2(1.376, 1.376)
+texture = ExtResource("2_ty7el")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -822.0
+offset_top = 173.0
+offset_right = 180.0
+offset_bottom = 371.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_font_sizes/normal_font_size = 40
+
+[connection signal="mouse_entered" from="Button1" to="." method="_on_button_1_mouse_entered"]
+[connection signal="mouse_exited" from="Button1" to="." method="_on_button_1_mouse_exited"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="mouse_entered" from="Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="mouse_exited" from="Button2" to="." method="_on_button_2_mouse_exited"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="mouse_entered" from="Button3" to="." method="_on_button_3_mouse_entered"]
+[connection signal="mouse_exited" from="Button3" to="." method="_on_button_3_mouse_exited"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="mouse_entered" from="Button4" to="." method="_on_button_4_mouse_entered"]
+[connection signal="mouse_exited" from="Button4" to="." method="_on_button_4_mouse_exited"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="mouse_entered" from="Button5" to="." method="_on_button_5_mouse_entered"]
+[connection signal="mouse_exited" from="Button5" to="." method="_on_button_5_mouse_exited"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="ready" from="RichTextLabel" to="." method="_on_label_ready"]
